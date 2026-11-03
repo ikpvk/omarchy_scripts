@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Deletes the stock Omarchy themes Kris chose to remove on 2026-11-03.
+# Deletes the stock Omarchy themes Kris chose to remove (list updated 2026-11-03).
 # `omarchy update` reinstalls them, so run this again after each update,
 # but only after Kris approves. The list is also in "resources/Omarchy themes.md" in the second_brain vault.
 #
@@ -12,12 +12,16 @@ THEMES_DIR="${OMARCHY_PATH:-/usr/share/omarchy}/themes"
 REMOVED=(
   catppuccin-latte
   ethereal
+  everforest
   flexoki-light
   hackerman
+  kanagawa
   last-horizon
   lupine
+  matte-black
   miasma
   nord
+  osaka-jade
   retro-82
   ristretto
   rose-pine
