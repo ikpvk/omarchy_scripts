@@ -12,10 +12,20 @@ This is a copy, not a symlink. When the settings change in `~/.config/omarchy/sh
 | `centerBegin` | Empty |
 | `center` | Clock |
 | `centerEnd` | System update |
-| `right` | Tray |
+| `right` | Tray (the `nausica.tray` copy, see below) |
 | `tray` (the Tray's drawer, opens on hover) | 7 Indicators copies, Elsewhen, Weather, Keyboard layout, Oma-do-wa, hyprmoncfg, Tailscale, Agents, Bluetooth, Network, Audio, Power |
 
 The Omarchy Menu widget is removed. SUPER + ALT + SPACE still opens the menu.
+
+### Tray
+
+The bar uses `nausica.tray`, a copy of the built-in `omarchy.tray` widget, so the drawer opens and closes instantly, and its contents fade in over 0.15 seconds when it opens. The built-in widget slides it open over 0.6 seconds and has no setting for that. The copy lives in `~/.config/omarchy/plugins/nausica.tray/`, with a copy in `plugins/nausica.tray/` here. The changes are in `Tray.qml`, marked with a "Kris:" comment: `animationDuration: 0` and a `fadeProgress` property that fades the drawer contents in over `fadeDuration` (150 ms). Closing has no fade.
+
+Close styles tried on 2026-11-10 and dropped: fading the contents and the chevron out before closing, with the chevron either fading back in at the closed place, crossfading with a second chevron there, or reappearing at once. Kris preferred closing instantly.
+
+The Tray needs no Omarchy services, and the shell lets a copy of it hold the drawer, so the widgets in the drawer keep working. The copy doesn't get Omarchy's updates to the Tray. To go back to the built-in widget, set the `right` section's id back to `omarchy.tray` in `shell.json`.
+
+It was made by hand, not with `omarchy plugin clone`. On 2026-11-10 that command failed with "omarchy-shell is not responding" after it had switched `shell.json` to the copy and deleted the copy's folder, which left the bar without a Tray until `shell.json` was restored. The command also sends a desktop notification.
 
 ### Indicators
 
