@@ -4,21 +4,81 @@
     "layout": {
       "center": [
         {
+          "id": "omarchy.clock",
           "birthYear": 1990,
           "format": "HH:mm",
           "formatAlt": "d MMMM 'W'ww yyyy",
-          "id": "omarchy.clock",
           "lifeExpectancy": 90,
           "verticalFormat": "HH\n—\nmm",
           "weekStartDay": "sunday"
         }
       ],
-      "centerBegin": [
+      "centerBegin": [],
+      "centerEnd": [
         {
-          "id": "omarchy.indicators"
+          "id": "omarchy.system-update"
         }
       ],
-      "centerEnd": [
+      "left": [
+        {
+          "id": "omarchy.workspaces"
+        }
+      ],
+      "right": [
+        {
+          "id": "omarchy.tray"
+        }
+      ],
+      "tray": [
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "PasswordlessSudo"
+          ],
+          "alwaysShow": true
+        },
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "ScreenRecording"
+          ],
+          "alwaysShow": true
+        },
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "RemoteSession"
+          ],
+          "alwaysShow": true
+        },
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "Reminder"
+          ],
+          "alwaysShow": true
+        },
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "NightLight"
+          ],
+          "alwaysShow": true
+        },
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "Dnd"
+          ],
+          "alwaysShow": true
+        },
+        {
+          "id": "omarchy.indicators",
+          "items": [
+            "StayAwake"
+          ],
+          "alwaysShow": true
+        },
         {
           "cities": [
             {
@@ -34,22 +94,6 @@
         },
         {
           "id": "omarchy.weather"
-        },
-        {
-          "id": "omarchy.system-update"
-        }
-      ],
-      "left": [
-        {
-          "id": "omarchy.menu"
-        },
-        {
-          "id": "omarchy.workspaces"
-        }
-      ],
-      "right": [
-        {
-          "id": "omarchy.tray"
         },
         {
           "id": "omarchy.keyboard-layout"
@@ -79,8 +123,7 @@
           "id": "omarchy.power",
           "showPercentage": false
         }
-      ],
-      "tray": []
+      ]
     },
     "position": "top"
   },
