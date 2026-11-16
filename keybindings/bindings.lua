@@ -119,3 +119,11 @@ o.rebind("SUPER + CTRL + N", "Toggle nightlight", "omarchy toggle nightlight")
 -- SUPER + ALT + comma was previously bound to: Dismiss last notification
 o.rebind("SUPER + ALT + comma", "Brightness down", { brightness = "lower" }, { locked = true, repeating = true })
 o.bind("SUPER + ALT + PERIOD", "Brightness up", { brightness = "raise" }, { locked = true, repeating = true })
+
+-- SUPER + L was previously bound to: Cycle workspace layout
+hl.unbind("SUPER + L")
+o.bind("SUPER + L", "Lock system", "omarchy-system-lock")
+-- SUPER + ALT + L was previously bound to: Cycle workspace layout back
+hl.unbind("SUPER + ALT + L")
+-- SUPER + CTRL + L was previously bound to: Lock system (now on SUPER + L)
+hl.unbind("SUPER + CTRL + L")

@@ -29,6 +29,8 @@ This is a copy, not a symlink. When the bindings change in `~/.config/hypr/bindi
 
 Kris uses only 5 workspaces, so these Omarchy defaults are unbound: SUPER (+ SHIFT, + SHIFT + ALT) + 6 to 0, SUPER + TAB, SUPER + SHIFT + TAB and SUPER + mouse wheel.
 
+SUPER + ALT + L, which cycled the workspace layout back, is also unbound and has no replacement.
+
 ### Volume and brightness
 
 | Keys | Action | Notes |
@@ -51,6 +53,7 @@ All five also work on the lock screen. Holding a volume or brightness key repeat
 | SUPER + CTRL + W | Network panel | Used to open the Background switcher, which is still on SUPER + CTRL + SPACE |
 | SUPER + CTRL + N | Turn the nightlight on or off | Used to open the Network panel |
 | SUPER + ALT + D | Oma-do-wa, the Docker Compose panel | Needs the `oma_do_wa` shell plugin |
+| SUPER + L | Lock the screen | Used to cycle the workspace layout. Moved here from SUPER + CTRL + L, which is now unbound |
 
 ## Needs
 
