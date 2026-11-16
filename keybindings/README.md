@@ -17,7 +17,7 @@ This is a copy, not a symlink. When the bindings change in `~/.config/hypr/bindi
 | SUPER + P | Open Video Downloader | AppImage in `~/Downloads/softwares/open_video_downloader/`. Replaces Omarchy's default |
 | SUPER + SHIFT + F | File manager (flea) | The block is written by `flea --default` |
 | SUPER + ALT + SHIFT + F | File manager (flea) in the terminal's current folder | Also written by `flea --default` |
-| SUPER + ALT + O | Second brain: a terminal in the vault with Claude Code running | |
+| SUPER + ALT + O | Second brain: a terminal in the vault with Claude Code running. Sets `SECOND_BRAIN_TODOS=1` so the vault hook shows to-dos and overdue tasks in the start screen | |
 | SUPER + A | Shell aliases menu | Runs `omarchy-menu-aliases` |
 
 ### Workspaces

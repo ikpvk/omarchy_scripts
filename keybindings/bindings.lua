@@ -107,8 +107,10 @@ o.bind("SUPER + ALT + D", "Oma-do-wa", "omarchy-shell oma_do_wa toggle")
 hl.unbind("SUPER + CTRL + D")
 o.bind("SUPER + CTRL + D", "Display (hyprmoncfg)", "omarchy-shell shell summon crmne.hyprmoncfg '{}'")
 
--- Second brain: open a terminal in the vault with Claude Code running
-o.bind("SUPER + ALT + O", "Second brain (Claude)", { launch = "xdg-terminal-exec --dir=/home/nausica/Downloads/work/second_brain bash -ic claude" })
+-- Second brain: open a terminal in the vault with Claude Code running.
+-- SECOND_BRAIN_TODOS=1 makes the vault's todos-on-launch.sh hook show
+-- Kris's to-dos and overdue tasks in Claude's start screen (no Claude usage)
+o.bind("SUPER + ALT + O", "Second brain (Claude)", { launch = "xdg-terminal-exec --dir=/home/nausica/Downloads/work/second_brain bash -ic 'SECOND_BRAIN_TODOS=1 exec claude'" })
 
 -- SUPER + CTRL + W was previously bound to: Background switcher (still on SUPER + CTRL + SPACE)
 o.rebind("SUPER + CTRL + W", "Network", { panel = "omarchy.network" })
