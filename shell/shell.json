@@ -80,6 +80,7 @@
           "alwaysShow": true
         },
         {
+          "id": "omarchy.elsewhen",
           "cities": [
             {
               "name": "Kolkata",
@@ -88,9 +89,15 @@
             {
               "name": "London",
               "zone": "Europe/London"
+            },
+            {
+              "name": "New York",
+              "zone": "America/New_York",
+              "lat": 40.71427,
+              "lon": -74.00597,
+              "region": "US"
             }
-          ],
-          "id": "omarchy.elsewhen"
+          ]
         },
         {
           "id": "omarchy.weather"

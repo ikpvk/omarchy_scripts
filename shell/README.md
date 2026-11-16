@@ -2,7 +2,7 @@
 
 A copy of Kris's Omarchy shell settings, from `~/.config/omarchy/shell.json`. It sets the bar's position, background and the widgets in each section, plus the idle and lock timers. Omarchy's defaults are in `/usr/share/omarchy/config/omarchy/shell.json`.
 
-This is a copy, not a symlink. When the settings change in `~/.config/omarchy/shell.json`, copy the file here again and commit it.
+This is a copy, not a symlink. When the settings change in `~/.config/omarchy/shell.json`, run `shell/sync.sh`. It copies the file here with `birthYear` set to `1990`, so the real year stays out of this public repo, and copies the `nausica.tray` plugin into `plugins/`. Then update this README if the bar changed, and commit.
 
 ## Current bar layout
 

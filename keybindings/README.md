@@ -2,7 +2,7 @@
 
 A copy of Kris's custom Hyprland keybindings, from `~/.config/hypr/bindings.lua`. Omarchy loads this file after its own defaults, so it only holds Kris's changes. To see every binding, including Omarchy's defaults, run `omarchy menu keybindings --print`.
 
-This is a copy, not a symlink. When the bindings change in `~/.config/hypr/bindings.lua`, copy the file here again and commit it.
+This is a copy, not a symlink. When the bindings change in `~/.config/hypr/bindings.lua`, run `keybindings/sync.sh`. It reloads Hyprland, stops if the config has errors, and copies the file here. Then update the tables below and commit.
 
 ## Bindings
 
