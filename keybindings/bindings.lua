@@ -41,15 +41,16 @@ o.bind("SUPER + P", "ovd", "/home/nausica/Downloads/softwares/open_video_downloa
 hl.unbind("SUPER + SHIFT + F")
 o.bind("SUPER + SHIFT + F", "File manager", "nautilus --new-window /home/nausica/Downloads")
 
+-- Works in per-monitor slots (1-5), not raw workspace ids: each monitor owns a
+-- block of ten ids (eDP-1 1-10, DP-3 11-20), so raw ids would pull another
+-- monitor's workspaces onto this one. o.workspaces.focus maps slot -> id.
 local MAX_WORKSPACE = 5
 local function go_workspace(delta)
   local ws = hl.get_active_workspace()
-  if not ws then return end
-  local cur = ws.id
+  if not ws or ws.id <= 0 then return end
+  local cur = (ws.id - 1) % 10 + 1
   local target = math.max(1, math.min(MAX_WORKSPACE, cur + delta))
-  if target ~= cur then
-    hl.dispatch(hl.dsp.focus({ workspace = tostring(target) }))
-  end
+  o.workspaces.focus(target)()
 end
 
 hl.unbind("SUPER + CTRL + LEFT")

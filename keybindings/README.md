@@ -24,8 +24,8 @@ This is a copy, not a symlink. When the bindings change in `~/.config/hypr/bindi
 
 | Keys | Action | Notes |
 |---|---|---|
-| SUPER + CTRL + LEFT | Previous workspace | Stops at workspace 1 |
-| SUPER + CTRL + RIGHT | Next workspace | Stops at workspace 5 |
+| SUPER + CTRL + LEFT | Previous workspace | Stops at workspace 1 of the focused monitor |
+| SUPER + CTRL + RIGHT | Next workspace | Stops at workspace 5 of the focused monitor |
 
 Kris uses only 5 workspaces, so these Omarchy defaults are unbound: SUPER (+ SHIFT, + SHIFT + ALT) + 6 to 0, SUPER + TAB, SUPER + SHIFT + TAB and SUPER + mouse wheel.
 
